@@ -9,24 +9,24 @@ Once done...
 
 1. Insert the SD card and boot the pi.
 
-2. If on an existing system, or the initial boot didn't automatically run the configuration, execute from cmd line:
+2. If on an existing system, or the initial boot didn't automatically run the configuration, execute from cmd line:  
 	2.1 sudo raspi-config
 
 ***************************************************
 Now that you're in the cofiguration software:
 
-1. Select Enable Boot to Desktop/Scratch
+1. Select Enable Boot to Desktop/Scratch  
 	1.1 Set to Console Text console, requiring login
 	
-2. Select Internationalisation Options
-	2.1 Select your specific Timezone
+2. Select Internationalisation Options  
+	2.1 Select your specific Timezone  
 	2.2 Set the keyboard layout to US
 	
-3. Select Overclock
+3. Select Overclock  
 	3.1 Select Medium (or whatever you prefer)
 	
-4. Select Advanced Options
-	4.1 Select Memory Split
+4. Select Advanced Options  
+	4.1 Select Memory Split  
 	4.2 Set to 128
 	
 5. Select Finish
