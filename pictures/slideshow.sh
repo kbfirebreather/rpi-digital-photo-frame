@@ -1,0 +1,1 @@
+fbi -noverbose -u -a -t 10 /home/pi/pictures/*.jpg /home/pi/pictures/*.JPG
