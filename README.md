@@ -41,9 +41,9 @@ Set the console to automatically login the 'pi' user:
 
 1. sudo vi /etc/inittab
 
-2. find 1:2345:respawn:/sbin/getty --noclear 38400 tty1
-	2.1 set to #1:2345:respawn:/sbin/getty --noclear 38400 tty1
-	2.2 Append after this line: 1:2345:respawn:/bin/login -f pi tty1 </dev/tty1 
+2. find 1:2345:respawn:/sbin/getty --noclear 38400 tty1  
+	2.1 set to #1:2345:respawn:/sbin/getty --noclear 38400 tty1  
+	2.2 Append after this line: 1:2345:respawn:/bin/login -f pi tty1 </dev/tty1   
 	
 3. Save and quit
 
