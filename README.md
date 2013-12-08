@@ -87,9 +87,9 @@ Set cronjobs to do some work:
 1. sudo crontab -e
 
 2. Insert the following jobs:  
-	2.1     0   0  * * * /home/pi/pictures/restart.sh  
-	2.2     30  11 * * * /home/pi/pictures/remove_spaces.sh  
-	2.3     0   12 * * * /home/pi/pictures/resize.sh  
+	2.1		0   0  * * * /home/pi/pictures/restart.sh  
+	2.2		30  11 * * * /home/pi/pictures/remove_spaces.sh  
+	2.3		0   12 * * * /home/pi/pictures/resize.sh  
 	
 3. Save and quit
 
