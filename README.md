@@ -55,7 +55,7 @@ Install screensaver software, ftp software, and imagemagick software:
 
 2. sudo apt-get install fbi
 
-3. sudo apt-get install proftpd
+3. sudo apt-get install proftpd  
 	3.1 Select standalone for the proftpd software
 	
 4. sudo apt-get install imagemagick
@@ -86,10 +86,10 @@ Set cronjobs to do some work:
 
 1. sudo crontab -e
 
-2. Insert the following jobs:
-	2.1 0 0 * * * /home/pi/pictures/restart.sh
-	2.2 30 11 * * * /home/pi/pictures/remove_spaces.sh
-	2.3 0 12 * * * /home/pi/pictures/resize.sh
+2. Insert the following jobs:  
+	2.1 0 0 * * * /home/pi/pictures/restart.sh  
+	2.2 30 11 * * * /home/pi/pictures/remove_spaces.sh  
+	2.3 0 12 * * * /home/pi/pictures/resize.sh  
 	
 3. Save and quit
 
@@ -105,7 +105,7 @@ Set the screensaver shell script to run when the pi boots up
 
 2. Locate the line: "exit 0"
 
-3. Before that line insert:
+3. Before that line insert:  
 	3.1 bash /home/pi/pictures/slideshow.sh
 	
 4. Save and quit
