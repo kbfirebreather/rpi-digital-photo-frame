@@ -1,7 +1,7 @@
 #!/bin/sh
-
+HOMEDIR=`cat homedir.txt`
 # Where are the files?
-IMG_PATH=`pwd`"/images/"
+IMG_PATH="$HOMEDIR/images/"
 
 cd $IMG_PATH
 
