@@ -20,18 +20,9 @@ Install screensaver software, ftp software, and imagemagick software:
 
 1. sudo apt-get update
 
-2. sudo apt-get install fbi
-
-3. sudo apt-get install proftpd  
-	3.1 Select standalone for the proftpd software
-	
-4. sudo apt-get install imagemagick
-	
-5. sudo reboot
+2. sudo apt-get install fbi imagemagick
 
 fbi is what will be the driver behind the screen saver
-
-proftpd is so we can copy the pictures to the pi
 
 imagemagick is so we can automatically resize the images being used to help save on storage
 
