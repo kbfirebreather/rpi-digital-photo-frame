@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Where are the files?
-IMG_PATH="/foo/bar/fred/"
+IMG_PATH=`pwd`"/images/"
 
 cd $IMG_PATH
 
