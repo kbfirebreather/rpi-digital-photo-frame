@@ -1,3 +1,4 @@
-cd /home/pi/pictures;
-mogrify -resize "1152x1152>" *.jpg
-mogrify -resize "1152x1152>" *.JPG
+IMG_PATH=`pwd`"/images/"
+cd $IMG_PATH;
+mogrify -resize "1024x768>" *.jpg
+mogrify -resize "1024x768>" *.JPG
