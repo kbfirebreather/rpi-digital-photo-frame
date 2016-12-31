@@ -16,7 +16,7 @@ Set the console to automatically login the 'pi' user:
 
 
 ***************************************************
-Install screensaver software, ftp software, and imagemagick software:
+Install screensaver and imagemagick software:
 
 1. sudo apt-get update
 
