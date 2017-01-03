@@ -1,8 +1,8 @@
 #!/bin/sh
 HOMEDIR=`cat homedir.txt`
-# Where are the files?
+# Where are the image files?
 IMG_PATH="$HOMEDIR/images/"
-# How long to run the command in seconds before killing it?
+# How long between transitions?
 TIMEOUT=10
 
 cd $IMG_PATH
