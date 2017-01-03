@@ -20,7 +20,7 @@ Install screensaver and imagemagick software, set homedir, create directory for 
 
 6. Copy your images into the images dir
 
-7. Reboot & enjoy!
+7. Configure the system to start the slideshow.sh script at boot time, Reboot & enjoy!
 
 
 
