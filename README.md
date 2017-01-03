@@ -14,11 +14,11 @@ Install screensaver and imagemagick software, set homedir, create directory for 
 
 3. pwd > homedir.txt
 
-4. sudo mkdir images
+4. sudo chmod +x *.sh
 
-5. Copy your images into the images dir
+5. sudo mkdir images
 
-6. sudo chmod +x *.sh
+6. Copy your images into the images dir
 
 7. Reboot & enjoy!
 
