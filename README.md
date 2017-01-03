@@ -10,17 +10,17 @@ Install screensaver and imagemagick software, set homedir, create directory for 
 
 1. sudo apt-get update && sudo apt-get install fbi imagemagick
 
-1. pwd > homedir.txt
-
 2. cd pictures
 
-3. sudo mkdir images
+3. pwd > homedir.txt
 
-4. Copy your images into the images dir
+4. sudo mkdir images
 
-5. sudo chmod +x *.sh
+5. Copy your images into the images dir
 
-6. Reboot & enjoy!
+6. sudo chmod +x *.sh
+
+7. Reboot & enjoy!
 
 
 
