@@ -42,7 +42,7 @@ FILES_COUNT=`ls -1 *.jpg | wc -l`
   # handles a forceful (-9) vs. graceful (no -9) kill.
   killall -9 fbi
   fbi -T 2 -noverbose -u -a -t $TIMEOUT $FILE_LIST 
-  sleep $(($TIMEOUT*$FILES_COUNT))
+  sleep $(($(($TIMEOUT*$FILES_COUNT))+$TIMEOUT))
 #done
 
 done
