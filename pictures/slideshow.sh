@@ -7,7 +7,7 @@ cd $IMG_PATH
 
 
 # How long to run the command in seconds before killing it?
-TIMEOUT=1
+TIMEOUT=10
 
 while true
 do
