@@ -46,4 +46,4 @@ EOT
 chmod +x /etc/init.d/slideshow
 update-rc.d slideshow defaults 91
 
-echo "\n\tDone.\n"
+echo -e "\n -Done-\n"
