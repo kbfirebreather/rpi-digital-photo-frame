@@ -28,7 +28,7 @@ case "\$1" in
     start)
         echo "Starting slideshow"
         cd `pwd`
-        ./slideshow.sh
+        ./slideshow.sh &
     ;;
     stop)
         echo -n "Shutting down slideshow"
