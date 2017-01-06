@@ -8,7 +8,7 @@ Instructions on how to turn a linux system into a digital picture frame.
 The installer installs screensaver and imagemagick software, sets homedir, 
 creates a directory for the pictures, makes shell scripts runable, adds slideshow.sh to run on startup.
 
-1. chmod +x install.sh; ./install.sh
+1. chmod +x install.sh; sudo ./install.sh
 2. Copy your images into the images dir
 3. Reboot & enjoy!
 
