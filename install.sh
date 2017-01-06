@@ -11,6 +11,7 @@ cd pictures
 pwd > homedir.txt
 chmod +x *.sh
 mkdir images
+chmod 777 images
 
 cat <<EOT >> /etc/init.d/slideshow
 #! /bin/sh
