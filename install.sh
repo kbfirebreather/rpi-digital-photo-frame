@@ -36,6 +36,7 @@ case "\$1" in
         do
           kill -9 \$i
         done
+        killall -9 fbi
     ;;
     *)
         echo "Usage: \$0 {start|stop}"
