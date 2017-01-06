@@ -32,7 +32,7 @@ case "\$1" in
     ;;
     stop)
         echo -n "Shutting down slideshow"
-        for i in \`ps aux | grep './slideshow.sh' | grep -v grep | awk '{print $2}'\`
+        for i in \`ps aux | grep './slideshow.sh' | grep -v grep | awk '{print \$2}'\`
         do
           kill -9 \$i
         done
