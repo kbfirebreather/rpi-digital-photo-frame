@@ -1,9 +1,11 @@
 #!/bin/bash
 
-cd pictures
-chmod +x *.sh
-mkdir images
+sudo apt-get update && sudo apt-get install fbi imagemagick
 
+cd pictures
+pwd > homedir.txt
+sudo chmod +x *.sh
+mkdir images
 cd ..
 
 chmod +x slideshow
