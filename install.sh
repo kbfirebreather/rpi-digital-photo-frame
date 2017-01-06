@@ -16,28 +16,28 @@ cat <<EOT >> /etc/init.d/slideshow
 #! /bin/sh
 ### BEGIN INIT INFO
 # Provides:          slideshow
-# Required-Start:    $remote_fs $syslog
-# Required-Stop:     $remote_fs $syslog
+# Required-Start:    \$remote_fs \$syslog
+# Required-Stop:     \$remote_fs \$syslog
 # Default-Start:     2 3 4 5
 # Default-Stop:      0 1 6
 # Short-Description: Start daemon at boot time
 # Description:       Enable service provided by daemon.
 ### END INIT INFO
-case "$1" in
+case "\$1" in
     start)
         echo "Starting slideshow"
         cd `pwd`
         ./slideshow.sh
     ;;
     stop)
-        echo -n "Shutting down noip2"
-        for i in `ps aux | grep './slideshow.sh' | grep -v grep | awk '{print $2}'`
+        echo -n "Shutting down slideshow"
+        for i in \`ps aux | grep './slideshow.sh' | grep -v grep | awk '{print $2}'\`
         do
-          kill -9 $i
+          kill -9 \$i
         done
     ;;
     *)
-        echo "Usage: $0 {start|stop}"
+        echo "Usage: \$0 {start|stop}"
         exit 1
 esac
 exit 0
