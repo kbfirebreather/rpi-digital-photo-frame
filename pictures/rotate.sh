@@ -9,5 +9,8 @@ FILE_LIST=`ls -1 *.jpg`
 
 for i in $FILE_LIST
 do
-	convert $i -rotate 180 $i
+if [[ $i =~ _rotated.jpg$ ]]
+	NEWNAME=$( $i | cut -f 1 -d '.' )
+	convert $i -rotate 180 $NEWNAME_rotated.jpg
+fi
 done
