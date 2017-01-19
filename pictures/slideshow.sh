@@ -1,21 +1,17 @@
-#!/bin/sh
+#!/bin/bash
+
 HOMEDIR=`cat homedir.txt`
 # Where are the image files?
 IMG_PATH="$HOMEDIR/images/"
-# How long between transitions?
-TIMEOUT=10
 
 cd $IMG_PATH
 
-while true
-do
-	../remove_spaces.sh
-	../resize.sh
+FILE_LIST=`ls -1 *.jpg`
 
-	FILE_LIST=`ls -1 *.jpg`
-	FILES_COUNT=`ls -1 *.jpg | wc -l`
-
-	killall -9 fbi
-	fbi -T 2 -noverbose -u -a -t $TIMEOUT $FILE_LIST 
-	sleep $(($TIMEOUT*$FILES_COUNT))
+for i in $FILE_LIST; do
+        if [[ ! $i =~ _rotated.jpg$ ]]; then
+                NEWNAME=$( echo "$i" | cut -f 1 -d '.' )
+                convert $i -rotate 180 $NEWNAME"_rotated.jpg"
+                rm -rf $i
+        fi
 done
