@@ -9,6 +9,7 @@ apt-get update && apt-get install fbi imagemagick
 
 cd pictures
 pwd > homedir.txt
+echo "30" > delay.txt
 chmod +x *.sh
 mkdir images
 chmod 777 images
